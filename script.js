@@ -1,11 +1,11 @@
-const url = "https://jsonplaceholder.typicode.com/posts/1";
-
+//const url = "https://jsonplaceholder.typicode.com/posts/1";
+//const url = "https://jsonplaceholder.typicode.com/todos/1";
 //your JS code here. If required.
 // Define the async function with a callback parameter
 async function fetchData(callback) {
   try {
     // Wait for the response from the API
-    const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+    const response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
     const data = await response.json();
     // Call the callback function with the data
     callback(data.title);
